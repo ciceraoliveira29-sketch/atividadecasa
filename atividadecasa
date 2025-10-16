@@ -1,0 +1,22 @@
+idade = int(input('informe idade:'))
+sexo = input('informe o sexo:')
+salario = float(input('salário:'))
+salario_novo = salario
+
+if idade > 30:
+    if sexo == 'M' and salario <= 3000:
+        salario_novo = salario * 1.3
+    else:
+        if sexo == 'F':
+           salario_novo = salario * 1.5
+else:
+    if sexo == 'F' and idade <= 30:
+       salario_novo = salario * 1.4
+    else:
+       salario_novo = salario * 1.2
+if salario_novo == salario:
+    print('esse funcionario não terá aumento')
+else:
+    print('salario novo:', salario_novo)
+
+    
